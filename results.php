@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     //     $class = "success";
     // }
 
-    $connection = mysqli_connect("localhost", "root", "", "taus_data");
+    $connection = mysqli_connect("localhost", "root", "", "taus_data, 3307");
 
     if (!$connection) {
         echo "<div class='message'>database connection failed</div>";
