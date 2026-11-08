@@ -24,15 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     //Sanitize email
     $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-     //Check for empty fields
-    // if ( empty($email)) {
-    //     $result = "All fields are required.";
-    //     $class = "error";
-    // } else {
-    //     $result = "Form submitted.";
-    //     $class = "success";
-    // }
-
     $connection = mysqli_connect("127.0.0.1", "root", "", "taus_data", 3307);
 
     if (!$connection) {
@@ -61,6 +52,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 }
 ?>
+
+<a href="index.php">return to search</a>
 
 </body>
 
